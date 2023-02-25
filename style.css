@@ -1,0 +1,187 @@
+/* Import da fonte "Inter" do Google */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Aplicado em todo o body */
+body{
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #303030;
+    background-image: url("assets/imgs/image.svg");
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Inter';
+    color: white;
+}
+
+    /* Menu principal */
+    menu{
+        padding: 0px;
+
+        margin: 20px 40px 0px 40px;
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+        menu a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #iconsMenu{
+            flex: 1;
+        }
+
+        #iconsMenu img{
+            padding: 0 30px 0 30px;
+        }
+
+        #logoMenu{
+            flex: 1;
+            text-align: center;
+        }
+
+        #linksMenu{
+            flex: 1;
+            text-align: right;
+            font-size: 24px;
+        }
+
+        #linksMenu a{
+            padding: 0 30px 0 30px;
+        }
+
+    /* Área principal da página */
+    body main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    body main form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    body main form label{
+        font-weight: 400;
+        font-size: 33px;
+        line-height: 60px;
+    }
+
+    body main form input{
+        width: 566px;
+        height: 52px;
+
+        background: rgba(127, 127, 127, 0.75);
+        border-radius: 26px;
+        border-style: none;
+
+        font-weight: 400;
+        font-size: 29px;
+        color: #FFFFFF;
+        padding-left: 40px;
+
+        margin-bottom: 15px;
+    }
+
+    body main form input::placeholder{
+        font-size: 29px;
+        color: #FFFFFF;
+    }
+
+    h2{
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 65px;
+    }
+
+    h4{
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    #subTexto{
+        width: 50%;
+    }
+
+    button{
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 33px;
+        color: #121111;
+
+        height: 56px;
+
+        background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 28px;
+
+        margin: 5px;
+    }
+
+    #formButton{
+        text-align: center;
+        margin-top: 30px;
+    }
+
+/* Alterações para mobile */
+@media screen and (max-width: 480px) {
+
+    body main{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    menu{
+        margin: 20px 20px 0px 20px;
+    }
+
+        #iconsMenu img{
+            padding: 0 20px 0 20px;
+        }
+
+        #linksMenu{
+            font-size: 20px;
+        }
+
+        #linksMenu a{
+            padding: 0 20px 0 20px;
+        }
+
+    body main form input{
+        width: 350px;       
+    }
+    
+    h2{
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    h4{
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    body main form label{
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    body main form input{
+        font-size: 25px;
+    }
+
+    #subTexto{
+        width: 80%;
+    }
+}
